@@ -111,7 +111,7 @@ class CartesianTree{
 			else if (curr_node->left == prev_node){
 				this->get_node_first_right_movement[curr_node->index] = next_transversing_edge_movement;
 				
-				CURRENT_DIRECTION = DIRECTION_DOWN; //
+				CURRENT_DIRECTION = DIRECTION_DOWN;
 				prev_node = curr_node;
 				curr_node = curr_node->right;
 
@@ -137,7 +137,7 @@ class CartesianTree{
 		int num_of_edges_tranversals = 2 * (n - 1);
 		get_node_first_right_movement = new int[n];
 		direction_up = new bool[num_of_edges_tranversals];
-		node_after_tranversing_edges = new int[num_of_edges_tranversals];
+		node_after_tranversing_edges = new int[num_of_edges_tranversals + 1];
 		
 		int next_transversing_edge_movement = 0;
 		int current_index = 0;

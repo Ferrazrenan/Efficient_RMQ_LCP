@@ -39,3 +39,5 @@ Icon
 *.tlog
 *.log
 *.pch
+Debug/entrada.txt
+Debug/vc120.pdb

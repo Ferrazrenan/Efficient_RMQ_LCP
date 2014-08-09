@@ -179,7 +179,7 @@ class SuffixArray{
 		std::string s;
 		std::queue<suffix*> *list;
 
-	SuffixArray(std::string* text, bool linear){
+	SuffixArray(std::string* text, bool nlogn){
 		s = *text;
 		n = (*text).size();
 
@@ -193,7 +193,7 @@ class SuffixArray{
 			AS[i] = i;
 		}
 
-		if (linear)
+		if (nlogn)
 			suffixSort();
 		else
 			orderSuffixArray();
